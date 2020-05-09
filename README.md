@@ -8,4 +8,5 @@ Estes repositório contem alguns relatórios técnicos para cursos de pós-gradu
 - [Redes de sensores](redes_sensores.pdf): Uma apresentação de redes, seus componentes e tecnologias. As redes de sensores são um dos fundamentos da internet das coisas
 - [Computacao pervasive e seu possível uso em sistemas de energia](pervasive_energy.pdf): uma análise das possíveis aplicações de computação pervasiva e de contexto aplicadas à sistemas de energia.
 - [Rastreamento de cena](cbic2011.pdf): Utilização de um sistema de visão computacional para analisar ações de um eletricistea na manutenção de sistemas de distribuição de energia elétrica.
+- [Dissertação de Mestrado](Leite_FranciscoEugeniodeAndrade_M.pdf): Este trabalho apresenta três modelos NARX utilizando redes neurais artificiais para previsão de carga nodal ativa e reativa, tendo em vista a posterior previsão do estado do sistema através do uso de um algoritmo de fluxo de carga, com a finalidade de poder estudar a segurança de operação do sistema energético para um perfil de carga futuro.
 
