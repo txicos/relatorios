@@ -1,0 +1,35 @@
+services:
+
+  mongo:
+    container_name: first-mongodb
+    image: mongo:4.4.6
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+      - MONGO_INITDB_DATABASE=firstmd
+    volumes:
+      - ./data/mongodb/:/data/db:rw
+    networks:
+      - decision
+
+  app:
+      build:
+          context: ./app/.
+          dockerfile: ./Dockerfile
+      container_name: apifastfirst
+      ports:
+          - '8080:8080'
+      image: fastapifirst
+      command: uvicorn main:app --host 0.0.0.0 --port 8080 --reload
+      volumes:
+          - ./app/:/usr/api/:rw
+      depends_on:
+          - mongo
+      networks:
+          - decision
+
+networks:
+  decision:
+    external: true
